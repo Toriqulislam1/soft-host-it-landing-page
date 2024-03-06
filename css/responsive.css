@@ -1,0 +1,161 @@
+/* ----------------mobile device----------------- */
+
+@media only screen and (max-width: 600px) {
+    .mobile-title-booking {
+        color: #5555a5;
+        text-align: center;
+    }
+    .mobile-checkbox-center {
+        text-align: center;
+    }
+    .checkbox-inherit {
+        float: inherit !important;
+    }
+}
+.pt,.pb,.padding {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .row.Billing-bg {
+        flex-direction: column-reverse;
+    }
+    .col-sm-6.padding {
+        padding-bottom: 0;
+    }
+    .col-sm-6.pt.pb {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    .col-sm-6.pt.pb img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+/* carousel section */
+@media only screen and (max-width: 600px) {
+    .mobile-width {
+        width: 320px;
+    }
+    .mobile-height {
+        min-height: 236px !important;
+    }
+}
+
+/* carousel section end */
+
+/* b hisab section */
+
+@media only screen and (max-width: 600px) {
+    .col-sm-12.col-md-6 {
+        order: 2;
+    }
+    .col-sm-12.col-md-6 .container.my-4 {
+        display: flex;
+        justify-content: center;
+    }
+    .col-sm-12.col-md-6 .container.my-4 #carouselExampleDark {
+        max-width: 80%;
+    }
+    .col-sm-12.col-md-6 .card-body {
+        margin-top: 20px;
+    }
+}
+/* b hisab section end */
+
+/* more question section */
+@media only screen and (max-width: 600px) {
+    .col-sm-6.text-end {
+        order: -1;
+        text-align: center !important;
+    }
+}
+/* more question section end */
+
+/* একাউন্টের জমা খরচ হিসাব section end */
+@media only screen and (max-width: 600px) {
+    .col-sm-6.text-end {
+        order: -1;
+    }
+}
+
+/* একাউন্টের জমা খরচ হিসাব section end */
+
+/* footer section */
+@media only screen and (max-width: 600px) {
+    .widget {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .logo-left-mobile {
+        margin-left: 78px;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        font-size: 18px;
+    }
+}
+/* footer section end */
+
+/* image section */
+@media only screen and (max-width: 600px) {
+    .soft-height .col-lg-2.col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/* image section */
+/* ------------------------------------------mobile device end---------------- */
+
+/* ------------------------tap device start --------------------- */
+@media only screen and (min-width: 768px) {
+    .tab-width-image {
+        width: 80%;
+    }
+    .tab-width-image-footer {
+        width: 99%;
+    }
+
+    .tab-widget {
+        margin-left: 0 !important;
+    }
+    .contact-us-mobile {
+        display: block !important;
+    }
+}
+
+/* carousel section */
+@media only screen and (min-width: 768px) {
+    .mobile-width {
+        width: 258px;
+    }
+    .mobile-height {
+        min-height: 261px !important;
+    }
+}
+
+/* carousel section end */
+
+/* ------------------------------------tap device end-------------------- */
+
+/* ------------------desktop device start ------------------------------------------------------------ */
+
+@media only screen and (min-width: 992px) {
+    .mobile-width {
+        width: 425px;
+    }
+    .mobile-height {
+        min-height: 329px !important;
+    }
+    .contact-us-mobile {
+        display: block !important;
+    }
+}
+
+/* ---------------------------------------------- desktop device end ---------------------------------------------- */
