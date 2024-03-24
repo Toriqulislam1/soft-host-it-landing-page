@@ -1,5 +1,56 @@
 /* ----------------mobile device----------------- */
 
+* {
+    box-sizing: border-box;
+}
+
+/* header section contact us all device responsive */
+
+@media only screen and (max-width: 600px) {
+    .contact-us-hide {
+        display: none !important;
+    }
+
+    .pl {
+        padding-left: 0px !important;
+    }
+
+    .hide-mobile-view {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hide-mobile-view {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .hide-mobile-view {
+        display: block !important;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .contact-us-mobile-view-test {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-us-mobile-view {
+        display: none !important;
+    }
+
+}
+
+/* header section all device responsive end*/
+
+
 @media only screen and (max-width: 600px) {
     .mobile-title-booking {
         color: #5555a5;
@@ -9,20 +60,32 @@
     .mobile-checkbox-center {
         text-align: center;
     }
-
 }
 
 .pt,
 .pb,
 .padding {
-    padding-top: 0;
+    padding-top: 30px;
     padding-bottom: 0;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 @media only screen and (max-width: 600px) {
-    .row.Billing-bg {
+    .mobile-reverce-col {
         flex-direction: column-reverse;
+        /* padding: 20px 20px; */
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .navbar-nav.align-items-center {
+            align-items: unset !important;
+        }
+    }
+
+    .tab-width-image {
+        width: 50%;
+        padding-top: 30px
     }
 
     .col-sm-6.padding {
@@ -46,7 +109,8 @@
     .mobile-width {
         width: 320px;
     }
-    .mobile-height{
+
+    .mobile-height {
         min-height: 236px !important;
     }
 
@@ -61,12 +125,12 @@
         order: 2;
     }
 
-    .col-sm-12.col-md-6 .container.my-4 {
+    .col-sm-12.col-md-6 .container-fluid.my-4 {
         display: flex;
         justify-content: center;
     }
 
-    .col-sm-12.col-md-6 .container.my-4 #carouselExampleDark {
+    .col-sm-12.col-md-6 .container-fluid.my-4 #carouselExampleDark {
         max-width: 80%;
     }
 
@@ -74,6 +138,7 @@
         margin-top: 20px;
     }
 }
+
 /* b hisab section end */
 
 
@@ -84,16 +149,18 @@
         text-align: center !important;
     }
 }
+
 /* more question section end */
 
 /* একাউন্টের জমা খরচ হিসাব section end */
 @media only screen and (max-width: 600px) {
     .col-sm-6.text-end {
-        
+
         order: -1;
-        
+
     }
 }
+
 /* একাউন্টের জমা খরচ হিসাব section end */
 
 /* footer section */
@@ -104,7 +171,8 @@
     }
 
     .logo-left-mobile {
-        margin-left: 78px;
+        /* margin-left: 78px; */
+        width: 80px;
     }
 
     .social-icons {
@@ -128,6 +196,7 @@
         /* Limit maximum width to 50% */
     }
 }
+
 /* image section */
 
 /* ------------------------------------------mobile device end---------------- */
@@ -135,16 +204,20 @@
 /* ------------------------tap device start --------------------- */
 @media only screen and (min-width: 768px) {
     .tab-width-image {
-        width: 80%;
+        width: 55%;
     }
+
     .tab-width-image-footer {
-        width: 99%;
+        width: 80%;
 
     }
+
     .tab-widget {
         margin-left: 0 !important;
         /* Remove the margin-left */
     }
+
+
 }
 
 
@@ -153,7 +226,8 @@
     .mobile-width {
         width: 258px;
     }
-    .mobile-height{
+
+    .mobile-height {
         min-height: 261px !important;
     }
 
@@ -167,12 +241,12 @@
 
 @media only screen and (min-width: 992px) {
     .mobile-width {
-        width:425px;
+        width: 425px;
     }
-    .mobile-height{
+
+    .mobile-height {
         min-height: 329px !important;
     }
 }
 
 /* ---------------------------------------------- desktop device end ---------------------------------------------- */
-
