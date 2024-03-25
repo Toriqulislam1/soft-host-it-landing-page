@@ -514,20 +514,7 @@ a:hover {
   }
 }
 
-
-
 /* new header section end*/
-
-/* carousel section */
-.carousel {
-  padding: 5px !important;
-}
-
-div#carouselExampleDark.carousel {
-  height: 100%;
-}
-
-/* carousel section end*/
 
 /* software title section */
 .soft-title {
@@ -561,48 +548,6 @@ div#carouselExampleDark.carousel {
 .font-family-sora {
   font-family: Sora, sans-serif;
 }
-
-
-/* slick */
-.main {
-  font-family: Arial;
-  width: 500px;
-  display: block;
-  margin: 0 auto;
-}
-
-slider {
-  background: #fff;
-  color: #3498db;
-  font-size: 36px;
-  line-height: 100px;
-  margin: 10px;
-  padding: 2%;
-  position: relative;
-  text-align: center;
-}
-
-.action {
-  display: block;
-  margin: 100px auto;
-  width: 100%;
-  text-align: center;
-}
-
-.action a {
-  display: inline-block;
-  padding: 5px 10px;
-  background: #f30;
-  color: #fff;
-  text-decoration: none;
-}
-
-.action a:hover {
-  background: #000;
-}
-
-/* slick end*/
-
 
 /* software title section end*/
 
@@ -941,13 +886,7 @@ svg {
 
 /* footer section end*/
 
-
-
-
 /* button css  */
-
-
-/* CSS */
 .button-20 {
   appearance: button;
   background-color: #4D4AE8;
@@ -1010,8 +949,6 @@ svg {
   box-shadow: 0 0.3em 1em -0.5em #14a73e98;
 }
 
-
-/* CSS */
 .button-63 {
   align-items: center;
   background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #3817f3);
@@ -1076,8 +1013,5 @@ svg {
 .slick-next {
   right: 20px;
 }
-
-
-
 
 /* button css end */
