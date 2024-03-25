@@ -11,73 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-/* slider sectio outstanding */
-.wrapper {
-  display: flex;
-  /* max-width: 650px; */
-  width: 100%;
-  height: 400px;
-  background: #fff;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper i.button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 36px;
-  width: 36px;
-  background-color: #343f4f;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 36px;
-  color: #fff;
-  font-size: 15px;
-  transition: all 0.3s linear;
-  z-index: 100;
-  cursor: pointer;
-}
-
-i.button:active {
-  transform: scale(0.94) translateY(-50%);
-}
-
-i#prev {
-  left: 25px;
-}
-
-i#next {
-  right: 25px;
-}
-
-.image-container {
-  height: 320px;
-  max-width: 500px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.image-container .carousel {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  transition: all 0.4s ease;
-}
-
-.carousel img {
-  height: 100%;
-  width: 100%;
-  border-radius: 18px;
-  border: 5px solid #fff;
-  object-fit: cover;
-}
-
-/* slider sectio outstanding end */
-
 /* headeer section  and booking*/
 
 .dropdown:hover>.dropdown-menu {
@@ -166,7 +99,9 @@ i#next {
 
 
 .navbar-light .navbar-toggler-icon {
-  background-color: #ffffff;
+  background-color: transparent;
+  filter: invert(100%);
+  border: 1px solid #131d36;
 }
 
 /* headeer section old and booking section end */
@@ -628,6 +563,45 @@ div#carouselExampleDark.carousel {
 }
 
 
+/* slick */
+.main {
+  font-family: Arial;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+slider {
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+
+.action {
+  display: block;
+  margin: 100px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.action a {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #f30;
+  color: #fff;
+  text-decoration: none;
+}
+
+.action a:hover {
+  background: #000;
+}
+
+/* slick end*/
 
 
 /* software title section end*/
@@ -823,12 +797,22 @@ footer-social {
   text-align: center;
   display: inline-block;
   border-radius: 50%;
-  background-color: rgba(50, 138, 241, 0.1);
-  border: 1px solid transparent;
   color: #fff;
   font-size: 15px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  background-color: #4D4AE8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-social li:hover {
+  background-color: #4d4ae800;
+  background-image: none;
+  border: 1px solid #4D4AE8;
+  color: #fff;
 }
 
 a,
@@ -850,7 +834,7 @@ a:hover {
   color: #fff;
   position: relative;
   margin-top: -6px;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
 }
 
 
@@ -860,15 +844,6 @@ a:hover {
   font-size: 13px;
   margin-bottom: 10px;
 }
-
-.footer-widget .title {
-  color: #fff;
-  position: relative;
-  margin-top: -6px;
-  margin-bottom: 35px;
-}
-
-
 
 .footer-list li {
   color: rgba(255, 255, 255, 0.5);
@@ -882,12 +857,6 @@ a:hover {
   box-sizing: border-box;
 }
 
-.footer-widget .title {
-  color: #fff;
-  position: relative;
-  margin-top: -6px;
-  margin-bottom: 35px;
-}
 
 .footer-list {
   padding-left: 0px;
@@ -984,7 +953,7 @@ svg {
   background-color: #4D4AE8;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
   border: 1px solid #4D4AE8;
-  border-radius: 1rem;
+  border-radius: 6px;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -1003,6 +972,14 @@ svg {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
+  transition: 0.3s;
+}
+
+.button-20:hover {
+  background-color: #4d4ae800;
+  background-image: none;
+  border: 1px solid #a9a8bf;
+  color: #fff;
 }
 
 .button-88 {
@@ -1060,11 +1037,44 @@ svg {
   outline: 0;
 }
 
+#banner-section .banner-features {
+  width: 150px;
+}
+
+#banner-section .form-check {
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   .button-63 {
     font-size: 24px;
     min-width: 196px;
   }
+}
+
+.card.col-lg-2.col-sm-6 {
+  vertical-align: middle;
+  text-align: center;
+  padding: 33px;
+  background: #191d3a87;
+}
+
+#feature-slider-section .slider-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 999;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
 }
 
 
